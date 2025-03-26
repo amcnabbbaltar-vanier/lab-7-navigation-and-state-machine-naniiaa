@@ -23,9 +23,9 @@ public class PatrolState : IState
             return;
         }
 
-        if(!aiController.Agent.pathPending && aiController.Agent.remainingDistance <= aiController.Agent.stoppingDistance)
+        if(!aiController.Agent.pathPending && aiController.Agent.remainingDistance <= aiController.Agent.stoppingDistance) // When you reach your previous destination
         {
-            MoveToNextwaypoint();
+            MoveToNextWaypoint();
         }
     }
 
@@ -37,13 +37,13 @@ public class PatrolState : IState
     private void MoveToNextWaypoint()
     {
         if(aiController.Waypoints.Length == 0)
-        {
+        
             return;
 
             aiController.Agent.destination = aiController.Waypoints[currentWaypointIndex].position;
+            
             currentWaypointIndex = (currentWaypointIndex + 1) % aiController.Waypoints.Length;
 
-        }
     }
 
 

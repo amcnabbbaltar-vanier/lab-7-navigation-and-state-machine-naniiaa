@@ -17,15 +17,15 @@ public class IdleState : IState
     
     public void Enter()
     {
-        ideTimer = 0f;
+        idleTimer = 0f;
         // aiController.Animator.SetBool("isMoving", false);
     }
 
     public void Execute()
     {
-        ideTimer += Time.deltaTime;
+        idleTimer += Time.deltaTime;
         
-        if (idleTimer > ideDuration) 
+        if (idleTimer > idleDuration) 
         {
             aiController.StateMachine.TransitionToState(StateType.Patrol);
         }

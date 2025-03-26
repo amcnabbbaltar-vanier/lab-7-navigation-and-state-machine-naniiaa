@@ -1993,6 +1993,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1594831682}
+  - component: {fileID: 1594831684}
   - component: {fileID: 1594831681}
   - component: {fileID: 1594831680}
   - component: {fileID: 1594831679}
@@ -2122,6 +2123,26 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 0082bfff2e5d2b2409e7032d54319c8a, type: 2}
   m_BuildHeightMesh: 0
+--- !u!114 &1594831684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594831678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2e7bc94f30dae41b468cb2f71b8876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints: []
+  Player: {fileID: 0}
+  SightRange: 10
+  AttackRange: 2
+  PlayerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  currentState: 0
 --- !u!1 &1607203453
 GameObject:
   m_ObjectHideFlags: 0
